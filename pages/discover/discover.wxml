@@ -8,5 +8,8 @@
   <view class="classify-icon">
     <image class="classify-icon-image" src="../../images/icon_game.png"></image>
   </view>
-   <label class="label-2__text">游戏</label>
+  <view class="label-2__text">
+   <label>游戏</label>
+  </view>
 </view>
+<view class="page-footer"></view>

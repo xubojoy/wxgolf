@@ -14,3 +14,10 @@
   border-bottom: 1rpx solid #ccc;
   /*margin-bottom: 10rpx;*/
 }
+
+/*.page-footer{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1rpx solid #ccc;
+  margin-bottom: 64px;
+}*/

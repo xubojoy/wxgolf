@@ -7,3 +7,4 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+<view class="page-footer"></view>

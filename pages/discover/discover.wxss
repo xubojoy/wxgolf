@@ -10,9 +10,10 @@
 .classify{
     position: relative;
     width: 64px;
-    height: 104px;
-    background-color: #7cbb73;
+    height: 94px;
+    background-color: #ffffff;
     margin-left: 20px;
+    margin-top: 20px;
 }
 .classify-icon{
     width: 64px;
@@ -23,8 +24,7 @@
     height: 64px;
 }
 .label-2__text{
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 12;
     text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
 }
