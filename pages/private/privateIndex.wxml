@@ -14,20 +14,19 @@
     <image class="special-qiuchang-img" src="../../images/index-tejia.png"></image>
     <text class="special-qiuchang-text">特价球场</text>
 </view>
-<scroll-view scroll-y="true" class="special-qiuchang-body">
+<scroll-view scroll-y="true" class="recommand-qiuchang-body">
   <navigator wx:for="{{recommandClubsArray}}">
-    <view class="special-qiuchang-item">
-        <image class="special-qiuchang-img" src="{{item.images.small}}"></image>
-        <view class="special-qiuchang-meta">
-            <text class="title">{{item.title}}</text>
-            <text class="sub-title">{{item.original_title}}({{item.year}})</text>
-            <view class="artists">
-                <text wx:for="{{item.directors}}">{{item.name}} </text>
+    <view class="recommand-qiuchang-item">
+        <image class="recommand-qiuchang-img" src="{{item.logoUrl}}"></image>
+        <view class="recommand-qiuchang-meta" style="text-align: right;widows: 1;">
+            <text class="recommand-qiuchang-title">{{item.name}}</text>
+            <view class="recommand-qiuchang-sub-title">
+                 <text class="recommand-qiuchang-courseKind">{{item.courseKind}}</text>
+                 <text class="recommand-qiuchang-courseData">{{item.courseData}}</text>
+                 <text class="recommand-qiuchang-distance">0km</text>
             </view>
+            <text class="recommand-qiuchang-price">¥{{item.weekdayPrice}}</text>
         </view>
-    <!--<view class="rating">
-      <text>{{item.rating.average}}</text>
-    </view>-->
     </view>
   </navigator>
 </scroll-view>
