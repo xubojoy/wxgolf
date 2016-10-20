@@ -11,7 +11,8 @@
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "每日高尔夫",
     "backgroundColor": "#fff",
-    "backgroundTextStyle": "dark"
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
   },
    "tabBar": {
     "color": "#ccc",

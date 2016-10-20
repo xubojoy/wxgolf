@@ -1,9 +1,33 @@
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view>
+  <image class="top-remind-img" src="../../images/bg_servers_top_icon@2x.png"></image>
 </view>
+<view class="index-nav">
+        <block wx:for-items="{{navs}}">
+            <view class="l-c-c" catchtap="go" data-type="{{item.text}}">
+                <image src="{{item.image}}" class="slide-image"/>
+                <text>{{item.text}}</text>
+            </view>
+        </block>
+</view>
+<view class="page-center-gray-line"></view>
+<view class="special-qiuchang-sign">
+    <image class="special-qiuchang-img" src="../../images/index-tejia.png"></image>
+    <text class="special-qiuchang-text">特价球场</text>
+</view>
+<scroll-view scroll-y="true" class="special-qiuchang-body">
+  <navigator wx:for="{{recommandClubsArray}}">
+    <view class="special-qiuchang-item">
+        <image class="special-qiuchang-img" src="{{item.images.small}}"></image>
+        <view class="special-qiuchang-meta">
+            <text class="title">{{item.title}}</text>
+            <text class="sub-title">{{item.original_title}}({{item.year}})</text>
+            <view class="artists">
+                <text wx:for="{{item.directors}}">{{item.name}} </text>
+            </view>
+        </view>
+    <!--<view class="rating">
+      <text>{{item.rating.average}}</text>
+    </view>-->
+    </view>
+  </navigator>
+</scroll-view>

@@ -1,0 +1,97 @@
+.top-remind-img{
+    display: block;
+    width: 100%;
+    height: 50px;
+
+}
+/*分类*/
+.index-nav {
+  height: 90px;
+  display: flex;
+  left: 10px;
+  right: 10px;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  color: #646464;
+  border-bottom: 1px solid #eeeeee;
+}
+.index-nav view {
+  flex: 1;
+  flex-direction: column;
+}
+.index-nav image {
+  width: 50px;
+  height: 50px;
+}
+.index-nav text {
+  margin-top: 5px;
+  font-size: 14px;
+}
+.slide-image {
+  height: 100%;
+  width: 100%;
+  margin-top: -10px;
+}
+.l-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-center-gray-line{
+    margin: 0px;
+    width: 100%;
+    height: 10px;
+    background: #f4f4f4;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.special-qiuchang-sign{
+  display: flex;
+  width: 100%;
+  height: 25px;
+  flex-direction:row;
+  border-bottom: 1px solid #eeeeee;
+  margin-left: 10px;
+}
+
+.special-qiuchang-img {
+  display: flex;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.special-qiuchang-text{
+  display: flex;
+  font-size: 14px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+/*view.text {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px 10px 10px 12px;
+  font-size: 15px;
+  color: #656565;
+}
+
+view.text:before {
+    position: absolute;
+    display: block;
+    content: ' ';
+    left: -5px;
+    width: 2px;
+    height: 100%;
+    background-color: #09bb07;
+}
+
+view.text text {
+  margin-left: 10px;
+  line-height: 18px;
+}*/
