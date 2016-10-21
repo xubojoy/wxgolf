@@ -18,12 +18,12 @@
   <navigator wx:for="{{recommandClubsArray}}">
     <view class="recommand-qiuchang-item">
         <image class="recommand-qiuchang-img" src="{{item.logoUrl}}"></image>
-        <view class="recommand-qiuchang-meta" style="text-align: right;widows: 1;">
+        <view class="recommand-qiuchang-meta">
             <text class="recommand-qiuchang-title">{{item.name}}</text>
             <view class="recommand-qiuchang-sub-title">
                  <text class="recommand-qiuchang-courseKind">{{item.courseKind}}</text>
                  <text class="recommand-qiuchang-courseData">{{item.courseData}}</text>
-                 <text class="recommand-qiuchang-distance">0km</text>
+                 <text class="recommand-qiuchang-distance">99km</text>
             </view>
             <text class="recommand-qiuchang-price">¥{{item.weekdayPrice}}</text>
         </view>
