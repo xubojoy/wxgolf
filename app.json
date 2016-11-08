@@ -14,42 +14,41 @@
     "backgroundTextStyle": "dark",
     "enablePullDownRefresh": true
   },
-   "tabBar": {
-    "color": "#ccc",
+  "tabBar": {
+    "color": "#000000",
     "selectedColor": "#35495e",
     "borderStyle": "white",
     "backgroundColor": "#fff",
-    "list": [
-      {
-        "text": "新闻",
-        "pagePath": "pages/news/newsIndex",
-        "iconPath": "images/news.png",
-        "selectedIconPath": "images/news-actived.png"
-      },
-      {
-        "text": "订场服务",
-        "pagePath": "pages/private/privateIndex",
-        "iconPath": "images/private.png",
-        "selectedIconPath": "images/private-actived.png"
-      },
-      {
-        "text": "一杆进洞",
-        "pagePath": "pages/holeInone/holeinoneindex",
-        "iconPath": "images/hole.png",
-        "selectedIconPath": "images/hole-actived.png"
-      },
-      {
-        "text": "发现",
-        "pagePath": "pages/discover/discover",
-        "iconPath": "images/discover.png",
-        "selectedIconPath": "images/discover-actived.png"
-      },
-      {
-        "text": "我",
-        "pagePath": "pages/user/userCenterIndex",
-        "iconPath": "images/user.png",
-        "selectedIconPath": "images/user-actived.png"
-      }
+    "list": [{
+      "pagePath": "pages/news/newsIndex",
+      "text": "新闻",
+      "iconPath": "images/news.png",
+      "selectedIconPath": "images/news-actived.png"
+    },
+    {
+      "pagePath": "pages/private/privateIndex",
+      "text": "订场服务",
+      "iconPath": "images/private.png",
+      "selectedIconPath": "images/private-actived.png"
+    },
+    {
+      "pagePath": "pages/holeInone/holeinoneindex",
+      "text": "一杆进洞",
+      "iconPath": "images/hole.png",
+      "selectedIconPath": "images/hole-actived.png"
+    },
+    {
+      "pagePath": "pages/discover/discover",
+      "text": "发现",
+      "iconPath": "images/discover.png",
+      "selectedIconPath": "images/discover-actived.png"
+    },
+    {
+      "pagePath": "pages/user/userCenterIndex",
+      "text": "我",
+      "iconPath": "images/user.png",
+      "selectedIconPath": "images/user-actived.png"
+    }
     ]
   },
   "networkTimeout": {

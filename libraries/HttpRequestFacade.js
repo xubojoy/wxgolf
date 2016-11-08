@@ -1,6 +1,7 @@
 const API_URL = 'http://api.golfd.cn/holeInOneUserPoints/year,2016/sort'
 const block_url = 'http://cms.golfd.cn/contentBlocks/'
 const recommand_clubs_url = 'http://api.golfd.cn/clubs/recommend'
+const recommend_commodity_url = 'http://api.golfd.cn/commodities/recommend'
 function fetchApi (params) {
   return new Promise((resolve, reject) => {
     wx.request({
@@ -35,6 +36,18 @@ function fetchRecommandClubsApi (params) {
   })
 }
 
+function fetchRecommandCommodityApi () {
+  return new Promise((resolve, reject) => {
+    wx.request({
+      url: `${recommend_commodity_url}`,
+      success: resolve,
+      fail: reject
+    })
+  })
+}
+
+
+
 module.exports = {
   find (pageNo, pageSize) {
     const params = { pageNo: pageNo, pageSize: pageSize }
@@ -48,6 +61,10 @@ module.exports = {
   findRecommandClubs (province) {
     const params = { province: province}
     return fetchRecommandClubsApi(params)
+      .then(res => res.data)
+  },
+  findRecommandCommodity () {
+    return fetchRecommandCommodityApi()
       .then(res => res.data)
   }
 }
