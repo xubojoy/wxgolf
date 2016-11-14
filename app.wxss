@@ -26,23 +26,23 @@
   /*margin-bottom: 10rpx;*/
 /*}*/
 
-/*.tips {
+.tips {
   font-size: 28rpx;
   text-align: center;
   padding: 50rpx;
   color: #ccc;
-}*/
+}
 
-/*.tips image {
+.tips image {
   width: 40rpx;
   height: 40rpx;
   margin-right: 20rpx;
-}*/
+}
 
-/*.tips image,
+.tips image,
 .tips text {
   vertical-align: middle;
-}*/
+}
 
 /*.page-footer{
   display: flex;
